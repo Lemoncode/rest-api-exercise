@@ -4,16 +4,10 @@ const express = require('express'),
     dataFile = '/data/cars.json',
     router = express.Router();
 
-const getNextAvailableId = (allCars) => {
-    let maxId;
-    allCars.reduce((prev, current) => {
-        if (current.car_id > prev.car_id) {
-            maxId = current.car_id;
-        }
-        return maxId;
-    });
+const getNextAvailableId = allCars => {
+    let maxId = allCars.map(car => car.car_id).reduce((max, cur) => Math.max(max, cur), -Infinity);
     return ++maxId;
-}
+};
 
 const getCarData = () => (
     JSON.parse(
