@@ -2,7 +2,7 @@
 
 El objetivo de este ejemplo es comenzar con REST desde el lado de cliente.
 
-Tomaremos como punto de partida una palicación que muestar una lista de harcoded data.
+Tomaremos como punto de partida una aplicación que muestra una lista de harcoded data.
 
 # Ejercicio
 
@@ -20,7 +20,7 @@ npm install
 npm start
 ```
 
-- Si comprobamos la implementación actual estamos recibiendo una lista de harcoded data. El `servicio` relacionado que nos provee lso datos lo podemos encontrar en _src/API/carsApi.double.js_
+- Si comprobamos la implementación actual estamos recibiendo una lista de harcoded data. El `servicio` relacionado que nos provee los datos, lo podemos encontrar en _src/API/carsApi.double.js_
 
 ```javascript
 const data = [

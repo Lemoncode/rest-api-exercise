@@ -5,12 +5,13 @@ const express = require('express'),
     router = express.Router();
 
 const getNextAvailableId = (allCars) => {
-    let maxId = allCars.reduce((prev, current) => {
+    let maxId;
+    allCars.reduce((prev, current) => {
         if (current.car_id > prev.car_id) {
             maxId = current.car_id;
         }
         return maxId;
-    }, 0);
+    });
     return ++maxId;
 }
 
@@ -58,7 +59,7 @@ router.route('/:id')
     .get((req, res) => {
         var data = getCarData();
         var matchingCar = data.find(
-            (item) => item.car_id === req.params.id
+            (item) => item.car_id === +req.params.id
         );
 
         if(!matchingCar) {
