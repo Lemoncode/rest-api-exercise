@@ -2,7 +2,7 @@ import {
     addCarRows, 
     retrieveCarId, 
     populateEditCarForm,
-    retrieveCarFormEditCarForm,
+    retrieveCarForm,
     cleanTable,
 } from './uiHelpers';
 import { 
@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
     buttonAddCar.addEventListener('click', (event) => {
         event.stopPropagation();
         event.preventDefault();
-        const car = retrieveCarFormEditCarForm();
+        const car = retrieveCarForm();
         addCar(car)
             .then((_) => {
                 cleanTable('cars-table');

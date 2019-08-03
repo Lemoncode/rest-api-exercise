@@ -36,7 +36,7 @@ export const populateEditCarForm = ({ name, brand, year_release }) => {
     document.getElementById('year').value = year_release;
 }
 
-export const retrieveCarFormEditCarForm = () => {
+export const retrieveCarForm = () => {
     const name = document.getElementById('name').value;
     const brand = document.getElementById('brand').value;
     const year_release = document.getElementById('year').value;
