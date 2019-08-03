@@ -7,7 +7,7 @@ const express = require('express'),
 const getNextAvailableId = (allCars) => {
     const carIds = allCars.map((c) => c.car_id);
     const maxValue = Math.max(...carIds);
-    return ++maxValue;
+    return maxValue + 1;
 }
 
 const getCarData = () => (
