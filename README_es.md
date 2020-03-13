@@ -82,7 +82,7 @@ export const addCar = (car) => {
 # Opcional
 
 * Como parte opcional implementa la API REST de más de una manera.
-* Crear capa de seguridad para las peticiones contra la API.
+* Crear capa de seguridad para las peticiones contra la API. Nota, para implementar la capa de seguridad hay que implementar también el servidor de autenticación.
 * Modificar el servidor y clientes actuales para que trabaje con GraphQL.
 
 # About Basefactor + Lemoncode

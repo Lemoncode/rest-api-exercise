@@ -98,7 +98,7 @@ npm start
 # Optional
 
 * As optional part implement in more than one way the real API.
-* Create security layer for API requests.
+* Create security layer for API requests. Note, for implement security layer you have to implement as well the authentication server.
 * Modify current server and client to work with GraphQL.
 
 # About Basefactor + Lemoncode
