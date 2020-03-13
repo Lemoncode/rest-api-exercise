@@ -5,9 +5,9 @@ const express = require('express'),
     router = express.Router();
 
 const getNextAvailableId = (allCars) => {
-    const ids = allCars.map((c) => c.car_id);
-    let maxId = Math.max(...ids);
-    return ++maxId;
+    const carIds = allCars.map((c) => c.car_id);
+    const maxValue = Math.max(...carIds);
+    return maxValue + 1;
 }
 
 const getCarData = () => (
