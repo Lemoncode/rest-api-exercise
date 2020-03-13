@@ -81,7 +81,9 @@ export const addCar = (car) => {
 
 # Opcional
 
-Como parte opcional implementa la API de más de una manera.
+* Como parte opcional implementa la API REST de más de una manera.
+* Crear capa de seguridad para las peticiones contra la API.
+* Modificar el servidor y clientes actuales para que trabaje con GraphQL.
 
 # About Basefactor + Lemoncode
 
